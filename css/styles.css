@@ -14,27 +14,6 @@ h1, h2 {
 
 body {
     padding: 1rem;
-    background-color: #bfbfbf;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: auto;
-}
-
-.profilepic {
-    width: 5rem;
-}
-    
-.telephone, .email {
-    width: 5rem;
-}
-
-.contacts {
-    display: flex;
 }
 
 @media only screen (min-width: 700px) {
