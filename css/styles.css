@@ -1,6 +1,5 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: calibri, sans-serif;
 }
 
 img {
@@ -8,14 +7,111 @@ img {
     height: auto;
 }
 
-h1, h2 {
+p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, body {
+    padding: 0;
     margin: 0;
 }
 
-body {
-    padding: 1rem;
+a:link, a:visited {
+  color: #ffffff;
 }
 
-@media only screen (min-width: 700px) {
+header {
+    border: 2vh solid #000000;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
 
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_button {
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0 0.25rem #ffffff;
+    font-size: 2.5vh;
+    padding-right: 0.25rem;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+    font-family: 'Playfair Display', serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.profile_pic {
+    grid-column: 1 / 4;
+}
+
+.intro_name, .intro_additional_text {
+    border: 0;
+    padding: 0;
+}
+
+.intro_name {
+    grid-column: 1 / 4;
+    font-size: 3rem;
+}
+
+.intro_additional_text {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    margin-bottom: 1vh;
+}
+
+#bio {
+    font-family: 'PT Serif', serif;
+    margin: 2vw 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bio_header {
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+
+#contacts {
+    background-color: #000000;
+}
+
+.contacts_telephone, .contacts_text {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 700px) {
+    .nav_button {
+        font-size: 4vh;
+    }
+    
+    .navbar {
+        justify-content: center;
+        gap: 10rem;
+    }
+    
+    .profile_pic {
+        width: 25rem;
+        height: auto;
+    }
 }
