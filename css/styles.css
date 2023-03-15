@@ -11,15 +11,36 @@ p {
     padding: 0;
     margin: 0;
     text-align: center;
+    font-family: 'PT Serif', serif;
 }
 
-h1, h2, h3, h4, h5, h6, body {
+h1, h2, h3 {
     padding: 0;
     margin: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 2rem;
+    width: max-content;
+    height: min-content;
+}
+
+h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 1.25rem;
+    width: max-content;
+    height: min-content;
 }
 
 a:link, a:visited {
   color: #ffffff;
+}
+
+hr {
+    border-top: 0.25vh solid #000000;
+    border-radius: 0.5vh;
+    width: 50%;
+    margin: 2vh auto;
 }
 
 header {
@@ -55,6 +76,7 @@ header {
     justify-items: center;
     font-family: 'Playfair Display', serif;
     background-color: #000000;
+    padding-bottom: 1vh;
     color: #ffffff;
 }
 
@@ -92,8 +114,62 @@ header {
     margin-bottom: 1vh;
 }
 
+#projects {
+    background-color: #bfbfbf;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.projects_header  {
+    margin: 2vh auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.projects_main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+.project_1, .project_2, .project_3, .project_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 2vh;
+    padding: 0.75vh;
+    border: 0.25vh solid #808080;
+}
+
+.project_1_title, .project_2_title, .project_3_title, .project_4_title {
+    text-align: center;
+}
+
+.project_1_description, .project_2_description, .project_3_description, .project_4_description {
+    width: 80%;
+    font-size: 1rem;
+}
+
+.project_1_image, .project_2_image, .project_3_image, .project_4_image {
+    width: 80%;
+    box-shadow: 0.7vh 0.7vh 0.2vh 0.2vh #999999;
+}
+
 #contacts {
     background-color: #000000;
+}
+
+.contacts_heading {
+    margin: 0 auto;
+    width: min-content;
+    color: #ffffff;
+    text-align: center;
 }
 
 .contacts_telephone, .contacts_text {
@@ -101,6 +177,10 @@ header {
 }
 
 @media only screen and (min-width: 700px) {
+    hr {
+        border-top: 0.5vh solid #000000;
+    }
+    
     .nav_button {
         font-size: 4vh;
     }
@@ -113,5 +193,23 @@ header {
     .profile_pic {
         width: 25rem;
         height: auto;
+    }
+    
+    .projects_main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vh;
+    }
+    
+    .project_1_title, .project_2_title, .project_3_title, .project_4_title {
+        font-size: 2rem;
+    }
+    
+    .project_1, .project_2, .project_3, .project_4 {
+        padding: 1vh;
+        border: 0.5vh solid #808080;
+    }
+    
+    .project_1_description, .project_2_description, .project_3_description, .project_4_description {
+        font-size: 1rem;
     }
 }
