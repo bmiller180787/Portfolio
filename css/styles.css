@@ -55,7 +55,6 @@ header {
 
 .navbar {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -63,7 +62,7 @@ header {
 
 .nav_button {
     border-radius: 0.25rem;
-    box-shadow: 0.25rem 0 0.25rem #ffffff;
+    box-shadow: 0.25rem -0.25rem 0.25rem #ffffff;
     font-size: 2.5vh;
     padding-right: 0.25rem;
 }
@@ -106,7 +105,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .bio_header {
@@ -141,28 +139,35 @@ header {
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    flex-wrap: wrap;
     gap: 2vh;
     padding: 0.75vh;
     border: 0.25vh solid #808080;
 }
 
-.project_1_title, .project_2_title, .project_3_title, .project_4_title {
+.project_title {
     text-align: center;
 }
 
-.project_1_description, .project_2_description, .project_3_description, .project_4_description {
+.project_description {
     width: 80%;
     font-size: 1rem;
 }
 
-.project_1_image, .project_2_image, .project_3_image, .project_4_image {
+.project_image {
     width: 80%;
-    box-shadow: 0.7vh 0.7vh 0.2vh 0.2vh #999999;
+    background-color: #000000;
+    box-shadow: 0.7vh 0.7vh 0.4vh 0.2vh #999999;
+    font-size: 1rem;
+    padding-bottom: 0.5vh;
+}
+
+a.image:hover {
+    opacity: 0.5;
 }
 
 #contacts {
     background-color: #000000;
+    padding: 0.85vh;
 }
 
 .contacts_heading {
@@ -200,7 +205,7 @@ header {
         gap: 4vh;
     }
     
-    .project_1_title, .project_2_title, .project_3_title, .project_4_title {
+    .project_title {
         font-size: 2rem;
     }
     
@@ -209,7 +214,12 @@ header {
         border: 0.5vh solid #808080;
     }
     
-    .project_1_description, .project_2_description, .project_3_description, .project_4_description {
+    .project_description {
         font-size: 1rem;
+    }
+    
+    .project_image {
+        font-size: 1.5rem;
+        padding-bottom: 1vh;
     }
 }
