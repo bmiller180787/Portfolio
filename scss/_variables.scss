@@ -1,6 +1,10 @@
-$primary_color: #004de6;
-$secondry_color: #FFFFFF;
-$third_color: #bfbfbf;
+$primary_color: #415B8B;
+$secondry_color: #151C28;
+$third_color: #4A6AA6;
 $main_font: 'PT Serif', serif;
 $secondry_font: 'Ubuntu', sans-serif;
 $third_font: 'Playfair Display', serif;
+
+@mixin boxborder {
+    border: 0.15rem solid black;
+}

@@ -33,27 +33,30 @@ h4, h5, h6 {
 }
 
 a:link {
-  color: #FFFFFF;
+  color: #151C28;
 }
 a:visited {
-  color: #FFFFFF;
+  color: #151C28;
 }
 
 hr {
-  border-top: 0.25vh solid #004de6;
+  border: 0.15rem solid black;
   border-radius: 0.5vh;
   width: 50%;
   margin: 2vh auto;
 }
 
 header {
-  border: 2vh solid #004de6;
-  background-color: #004de6;
+  border: 2vh solid #415B8B;
+  background-color: #415B8B;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   height: auto;
   font-family: "Ubuntu", sans-serif;
+  position: fixed;
+  top: 0;
+  left: auto;
 }
 
 .navbar {
@@ -65,7 +68,7 @@ header {
 
 .nav_button {
   border-radius: 0.25rem;
-  box-shadow: 0.25rem 0 0.25rem #FFFFFF;
+  box-shadow: 0.25rem 0 0.25rem #151C28;
   font-size: 2.5vh;
   padding-right: 0.25rem;
 }
@@ -77,9 +80,9 @@ header {
   align-items: center;
   justify-items: center;
   font-family: "Playfair Display", serif;
-  background-color: #004de6;
+  background-color: #415B8B;
   padding-bottom: 1vh;
-  color: #FFFFFF;
+  color: #151C28;
 }
 
 .profile_pic {
@@ -117,7 +120,7 @@ header {
 }
 
 #projects {
-  background-color: #bfbfbf;
+  background-color: #4A6AA6;
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
@@ -146,7 +149,7 @@ header {
   flex-wrap: wrap;
   gap: 2vh;
   padding: 0.75vh;
-  border: 0.25vh solid #bfbfbf;
+  border: 0.15rem solid black;
 }
 
 .project_1_title, .project_2_title, .project_3_title, .project_4_title {
@@ -160,27 +163,27 @@ header {
 
 .project_1_image, .project_2_image, .project_3_image, .project_4_image {
   width: 80%;
-  box-shadow: 0.7vh 0.7vh 0.2vh 0.2vh #bfbfbf;
+  box-shadow: 0.7vh 0.7vh 0.2vh 0.2vh #4A6AA6;
 }
 
 #contacts {
-  background-color: #004de6;
+  background-color: #415B8B;
 }
 
 .contacts_heading {
   margin: 0 auto;
   width: min-content;
-  color: #FFFFFF;
+  color: #151C28;
   text-align: center;
 }
 
 .contacts_telephone, .contacts_text {
-  color: #FFFFFF;
+  color: #151C28;
 }
 
 @media only screen and (min-width: 700px) {
   hr {
-    border-top: 0.5vh solid #004de6;
+    border: 0.15rem solid black;
   }
   .nav_button {
     font-size: 4vh;
@@ -202,7 +205,7 @@ header {
   }
   .project_1, .project_2, .project_3, .project_4 {
     padding: 1vh;
-    border: 0.5vh solid #bfbfbf;
+    border: 0.15rem solid black;
   }
   .project_1_description, .project_2_description, .project_3_description, .project_4_description {
     font-size: 1rem;
