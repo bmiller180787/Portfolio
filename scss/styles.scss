@@ -1,7 +1,20 @@
 @import 'variables';
 
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: $secondry_font_color;
 }
 
 img {
@@ -22,12 +35,109 @@ img {
     text-align: center;
     justify-content: center;
     background-color: $third_color;
-    color: $secondry_font_colour;
+    color: $secondry_font_color;
 }
 
 #projects {
     padding: 2rem;
     background-color: $secondry_color;
-    color: $primary_font_colour;
+    color: $secondry_font_color;
 }
 
+#contacts {
+    background-color: $third_color;
+    padding: 1rem;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contacts_heading {
+    font-size: 2rem;
+}
+
+.get_in_touch {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+
+    div {
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        padding: 0.5rem;
+        margin: 0;
+    }
+}
+
+.project {
+
+    flex-wrap: wrap;
+
+    img {
+
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.projects_main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.project_description, .projects_header {
+    text-align: center;
+}
+@media only screen and (min-width: 700px) {
+
+    .contact_details {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .get_in_touch {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+
+        div {
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            padding: 0.25rem;
+            margin: 0;
+        }
+    }
+
+    .projects_main {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+}
