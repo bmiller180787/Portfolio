@@ -21,7 +21,13 @@ img {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    background-color: $third_color;
+    color: $secondry_font_colour;
+}
+
+#projects {
+    padding: 2rem;
     background-color: $secondry_color;
     color: $primary_font_colour;
-
 }
+

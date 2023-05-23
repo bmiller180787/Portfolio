@@ -19,6 +19,12 @@ img {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  background-color: #E7F1DA;
+  color: #000000;
+}
+
+#projects {
+  padding: 2rem;
   background-color: #A9232C;
   color: #E7F1DA;
 }
