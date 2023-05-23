@@ -9,3 +9,19 @@ img {
     height: auto;
 }
 
+#intro {
+    background-color: $primary_color;
+    font-family: $third_font;
+    text-align: center;
+    padding: 2rem;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: $secondry_color;
+    color: $primary_font_colour;
+
+}

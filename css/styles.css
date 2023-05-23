@@ -7,4 +7,20 @@ img {
   height: auto;
 }
 
+#intro {
+  background-color: #BA4F56;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+#bio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #A9232C;
+  color: #E7F1DA;
+}
+
 /*# sourceMappingURL=styles.css.map */
