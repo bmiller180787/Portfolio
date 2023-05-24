@@ -19,7 +19,8 @@ a:link, a:visited {
 
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
 }
 
 #intro {
@@ -38,10 +39,67 @@ img {
     color: $secondry_font_color;
 }
 
+.bio_main_text {
+    width: 90%;
+    margin: 0 auto;
+
+    p {
+        padding: 0.25rem;
+        margin: 0.45rem;
+    }
+}
+
 #projects {
     padding: 2rem;
     background-color: $secondry_color;
     color: $secondry_font_color;
+}
+
+.project_image {
+    height: 20rem;
+    padding: 1rem;
+}
+
+.project {
+    flex-flow: wrap;
+    border: 0.1rem solid $primary_color;
+    text-align: center;
+    background-color: $primary_color;
+
+    .links {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        border: 0;
+    }
+
+    .projects_header {
+        font-size: 2rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0.25rem;
+    }
+}
+
+.projects_main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.project_description, .projects_header {
+    text-align: center;
+}
+
+.project_title {
+    font-size: 1.25rem;
+    font-family: $third_font;
 }
 
 #contacts {
@@ -80,32 +138,27 @@ footer {
     }
 }
 
-.project {
 
-    flex-wrap: wrap;
-
-    img {
-
-    }
-
-    p {
-        font-size: 1rem;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.projects_main {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-}
-
-.project_description, .projects_header {
-    text-align: center;
-}
 @media only screen and (min-width: 700px) {
+
+    #intro {
+        padding: 1rem;
+    }
+
+    #bio {
+        padding: 1rem;
+    }
+
+    .bio_main_text {
+        width: 90%;
+        margin: 0 auto;
+
+        p {
+            padding: 0;
+            margin: 0.15rem;
+
+        }
+    }
 
     .contact_details {
         width: 50%;
@@ -134,10 +187,20 @@ footer {
     }
 
     .projects_main {
-        width: 90%;
+        width: 60%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
+
+    .project_title {
+        font-size: 2rem;
+        padding: 0.3rem;
+    }
+
+    .project_description {
+        padding-bottom: 1.25rem;
+    }
+
 
 }
