@@ -6,7 +6,7 @@
 
 h4 {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 }
 
 a:link, a:visited {
-    color: $secondry_font_color;
+    color: $primary_font_color;
 }
 
 img {
@@ -55,26 +55,15 @@ img {
     color: $secondry_font_color;
 }
 
-.project_image {
-    height: 20rem;
-    padding: 1rem;
-}
-
 .project {
     flex-flow: wrap;
-    border: 0.1rem solid $primary_color;
+    border: 0.1rem solid $primary_font_color;
     text-align: center;
     background-color: $primary_color;
 
-    .links {
-        display: flex;
-        justify-content: space-around;
-        margin: 0;
-        border: 0;
-    }
-
-    .projects_header {
-        font-size: 2rem;
+    .project_image {
+        height: 20rem;
+        padding: 1rem;
 
     }
 
@@ -82,7 +71,15 @@ img {
         font-size: 1rem;
         margin: 0;
         padding: 0.25rem;
+        padding-top: 0;
     }
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    border: 0;
 }
 
 .projects_main {
@@ -98,8 +95,10 @@ img {
 }
 
 .project_title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: $third_font;
+    color: $primary_font_color;
+    padding: 1rem;
 }
 
 #contacts {
@@ -160,6 +159,26 @@ footer {
         }
     }
 
+    .projects_header {
+        font-size: 2rem;
+    }
+
+    .projects_main {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .project_title {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+
+    .project_description {
+        padding-bottom: 1.25rem;
+    }
+
     .contact_details {
         width: 50%;
         margin: 0 auto;
@@ -184,22 +203,6 @@ footer {
             padding: 0.25rem;
             margin: 0;
         }
-    }
-
-    .projects_main {
-        width: 60%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
-    .project_title {
-        font-size: 2rem;
-        padding: 0.3rem;
-    }
-
-    .project_description {
-        padding-bottom: 1.25rem;
     }
 
 
