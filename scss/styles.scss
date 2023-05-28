@@ -1,0 +1,226 @@
+@import 'variables';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h4 {
+    margin: 0;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+        a:link, a:visited {
+            color: $secondry_font_color;
+    }
+}
+
+.project {
+
+    a:link, a:visited {
+        color: $primary_font_color;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile_pic {
+    height: 20rem;
+}
+
+#intro {
+    background-color: $primary_color;
+    font-family: $third_font;
+    text-align: center;
+    padding: 2rem;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: $third_color;
+    color: $secondry_font_color;
+}
+
+.bio_main_text {
+    width: 90%;
+    margin: 0 auto;
+
+    p {
+        padding: 0.25rem;
+        margin: 0.45rem;
+    }
+}
+
+#projects {
+    padding: 2rem;
+    background-color: $secondry_color;
+    color: $secondry_font_color;
+}
+
+.project {
+    flex-flow: wrap;
+    border: 0.1rem solid $primary_font_color;
+    text-align: center;
+    background-color: $primary_color;
+
+    .project_image {
+        height: 20rem;
+        padding: 1rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0.25rem;
+        padding-top: 0;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    border: 0;
+}
+
+.projects_main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.project_description, .projects_header {
+    text-align: center;
+}
+
+.project_title {
+    font-size: 1rem;
+    font-family: $third_font;
+    color: $primary_font_color;
+    padding: 1rem;
+}
+
+#contacts {
+    background-color: $third_color;
+    padding: 1rem;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    p {
+        color: $secondry_font_color;
+    }
+}
+
+.contacts_heading {
+    font-size: 2rem;
+}
+
+.get_in_touch {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+
+    div {
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        padding: 0.5rem;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+
+    #intro {
+        padding: 1rem;
+    }
+
+    #bio {
+        padding: 1rem;
+    }
+
+    .bio_main_text {
+        width: 90%;
+        margin: 0 auto;
+
+        p {
+            padding: 0;
+            margin: 0.15rem;
+
+        }
+    }
+
+    .projects_header {
+        font-size: 2rem;
+    }
+
+    .projects_main {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .project_title {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+    }
+
+    .project_description {
+        padding-bottom: 1.25rem;
+    }
+
+    .contact_details {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .get_in_touch {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+
+        div {
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            padding: 0.25rem;
+            margin: 0;
+        }
+    }
+
+
+}

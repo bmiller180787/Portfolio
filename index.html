@@ -10,131 +10,158 @@
     <meta name="author" content="Brent Miller">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Ubuntu&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
-    <header id="heading">
-        <nav class="navbar">
-            <div class="nav_button">
-                <a href="#bio">About Me</a>
-            </div>
-            <div class="nav_button">
-                <a href="#projects">Projects</a>
-            </div>
-            <div class="nav_button">
-                <a href="#contacts">Contacts</a>
-            </div>
-        </nav>
-    </header>
 
-    <section id="intro">
-        <div class="introduction">
-            <div class="profile_pic">
-                <img src="images/profilepic.jpg" alt="Profile Pic">
+<section id="intro">
+    <div class="introduction">
+        <div class="profile_pic">
+            <img src="images/profilepic.jpg" alt="Brent Miller">
+        </div>
+        <div class="intro_name">
+            <h1 class="intro_header">Brent Miller</h1>
+        </div>
+        <div class="intro_additional_text">
+            <p><em>Full Stack Software Developer</em></p>
+        </div>
+    </div>
+</section>
+
+<section id="bio">
+    <div class="bio_header">
+        <h2>About Me</h2>
+    </div>
+    <div class="bio_main_text">
+        <p>My name is Brent Miller, and I am a newly trained Full Stack Software Developer</p>
+        <p>I have been interested in programming for many years and I'm excited that I have
+            finally been afforded the opportunity to pursue this passion as a career</p>
+        <p>I have always been the "IT help" at home and previous jobs and look forward to
+            both learning more skills and contributing as part of a team on larger projects</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="projects_header">Projects</h2>
+    <div class="projects_main">
+        <div class="project">
+            <div class="project_image">
+                <a class="image" href="https://23-mar-wordgame.dev.io-academy.uk">
+                    <img src="images/icbinwordle.png" alt="JavaScript Game Screenshot"></a>
             </div>
-            <div class="intro_name">
-                <h1 class="intro_header">Brent Miller</h1>
+            <div class="links">
+                <p><a href="https://github.com/iO-Academy/2023-mar-wordle">
+                    View in <i class="fa-brands fa-github"></i></a></p>
+                <p><a href="https://23-mar-wordgame.dev.io-academy.uk">View Live</i></a></p>
             </div>
-            <div class="intro_additional_text">
-                <p><em>Trainee Developer</em></p>
+            <div class="project_title">
+                <h4>JavaScript Game</h4>
+            </div>
+            <div class="project_description">
+                <p>As a group we were tasked with replicating the popular online game Wordle</p>
+                <p>The game was constructed using basic HTML and CSS for layout and styling,
+                    coupled with JavaScript for functionally</p>
+                <p>I was involved in putting together the layout and visual component functionality</p>
             </div>
         </div>
-    </section>
 
-    <section id="bio">
-        <div class="bio_header">
-            <h2>Biography</h2>
-        </div>
-        <div class="bio_main_text">
-            <p>My name is Brent Miller and I am currently training to become a Software Developer.</p>
-            <p>I have been interested in coding for several years and have decided to persue it as a career</p>
-        </div>
-    </section>
-
-    <hr>
-
-    <section id="projects">
-        <h2 class="projects_header">Previous Work</h2>
-        <div class="projects_main">
-            <div class="project_1">
-                <div class="project_image">
-                    <a class="image" href="#heading"><img src="images/projectpic_1.jpg" alt="Project 1 Snapshot" ></a>
-                    <p><a href="#heading">View in <i class="fa-brands fa-github"></i></a></p>
-                </div>
-                <div class="project_title">
-                    <h4>Project 1</h4>
-                </div>
-                <div class="project_description">
-                    <p>elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus</p>
+        <div class="project">
+            <div class="project_image">
+                <a class="image" href="#heading"><img src="images/icbinmonster.png" alt="Job Search Website Screenshot"></a>
+                <div class="links">
+                    <p><a href="https://github.com/iO-Academy/23-mar-icantbelieveitsnotmonster">View in <i
+                            class="fa-brands fa-github"></i></a></p>
+                    <p><a href=#>View Live</i></a></p>
                 </div>
             </div>
-
-            <div class="project_2">
-                <div class="project_image">
-                    <a class="image" href="#heading"><img src="images/projectpic_2.jpg" alt="Project 2 Snapshot"></a>
-                    <p><a href="#heading">View in <i class="fa-brands fa-github"></i></a></p>
-                </div>
-                <div class="project_title">
-                    <h4>Project 2</h4>
-                </div>
-                <div class="project_description">
-                    <p>leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante</p>
-                </div>
+            <div class="project_title">
+                <h4>React Application</h4>
             </div>
-
-            <div class="project_3">
-                <div class="project_image">
-                    <a class="image" href="#heading"><img src="images/projectpic_3.jpg" alt="Project 3 Snapshot"></a>
-                    <p><a href="#heading">View in <i class="fa-brands fa-github"></i></a></p>
-                </div>
-                <div class="project_title">
-                    <h4>Project 3</h4>
-                </div>
-                <div class="project_description">
-                    <p>viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut</p>
-                </div>
-            </div>
-
-            <div class="project_4">
-                <div class="project_image">
-                    <a class="image" href="#heading"><img src="images/projectpic_4.jpg" alt="Project 4 Snapshot"></a>
-                    <p><a href="#heading">View in <i class="fa-brands fa-github"></i></a></p>
-                </div>
-                <div class="project_title">
-                    <h4>Project 4</h4>
-                </div>
-                <div class="project_description">
-                    <p>tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc</p>
-                </div>
+            <div class="project_description">
+                <p>As a group we were tasked with creating a Job Search Website</p>
+                <p>The front-end was constructed using React and Bootstrap for styling.
+                    Data retrieved from a pre-existing API was supplied for us to use</p>
+                <p>I was involved in the overall architecture and search functionality of the site</p>
             </div>
         </div>
-    </section>
 
-    <footer id="contacts">
+        <div class="project">
+            <div class="project_image">
+                <a class="image" href="#heading"><img src="images/collectors_app.png" alt="PHP Project Screenshot"></a>
+                <div class="links">
+                    <p><a href="https://github.com/bmiller180787/Collectors_App">View in <i
+                            class="fa-brands fa-github"></i></a></p>
+                    <p><a href="#heading">View Live</i></a></p>
+                </div>
+            </div>
+            <div class="project_title">
+                <h4>PHP Database Access</h4>
+            </div>
+            <div class="project_description">
+                <p>In this task we were challenged to create a Collectors App</p>
+                <p>After creating a database, I used PHP used in conjunction with MySQL to retrieve the data
+                    and display it on the browser</p>
+                <p>CSS was used to style the HTML returned by PHP</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project_image">
+                <a class="image" href="https://2023-brentm.dev.io-academy.uk/js-blackjack"><img
+                        src="images/blackjack.png" alt="Blackjack Game Screenshot"></a>
+                <div class="links">
+                    <p><a href="https://github.com/bmiller180787/js-blackjack">View in <i
+                            class="fa-brands fa-github"></i></a></p>
+                    <p><a href="https://2023-brentm.dev.io-academy.uk/js-blackjack">View Live</i></a></p>
+                </div>
+            </div>
+            <div class="project_title">
+                <h4>Javascript Blackjack Game</h4>
+            </div>
+            <div class="project_description">
+                <p>In my spare time, I undertook to create a Backjack game using
+                    HTML, CSS and JavaScript</p>
+                <p>It is a work in progress and updates are made to the live version
+                    ever so often with additional functionality</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="get_in_touch">
         <div class="contacts_heading">
             <h4>Get In Touch</h4>
         </div>
         <div class="contacts_text">
-            <p>Please contact me or view my work at any of the below:</p>
+            <p>Please contact me or view all my work at any of the below:</p>
         </div>
-        <div class="contacts_telephone">
-            <p><i class="fa-solid fa-phone"></i> 075* *** ****</p>
+    </div>
+    <div class="contact_details">
+        <div>
+            <p><i class="fa-solid fa-phone"></i> 0759 335 9919</p>
         </div>
-        <div class="contacts_email">
-            <p><a href="mailto:*********@gmail.com"><i class="fa-solid fa-envelope"></i> *********@gmail.com</a></p>
+        <div>
+            <p><a href="mailto:bmiller180787+dev@gmail.com"><i class="fa-solid fa-envelope"></i>
+                Email</a></p>
         </div>
-        <div class="contacts_lnkdin">
-            
-            <p><a href="https://linkedin.com/in/brent-miller-295689264"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></p>
+        <div>
+            <p><a href="https://linkedin.com/in/brent-miller-295689264"><i class="fa-brands fa-linkedin"></i>
+                LinkedIn</a>
+            </p>
         </div>
-        <div class="contacts_github">
+        <div>
             <p><a href="https://github.com/bmiller180787"><i class="fa-brands fa-github"></i> GitHub</a></P>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
